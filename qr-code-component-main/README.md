@@ -1,4 +1,4 @@
-# Frontend Mentor - QR code component
+# Frontend Mentor - [QR code component link](https://sharif-22-qr-code.netlify.app/)
 
 ![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
 
