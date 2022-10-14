@@ -2,6 +2,13 @@ body{
     background-color: hsl(212, 45%, 89%);
 }
 
+.card{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main{
     width: 250px;
     margin: auto;
