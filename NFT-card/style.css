@@ -13,6 +13,13 @@ a{
     color: cyan;
 }
 
+.card{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .main{
     margin-left: auto;
