@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- jQuery  -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- boostrap css -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!--boostrap js  -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <!-- Rating state start -->
+      <div class="box box-1">
+        <button class="round">
+          <img class="icon" src="./images/icon-star.svg" alt="icon" srcset="" />
+        </button>
+        <h1 class="pt-4">How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating-btns d-flex">
+          <button class="round m-2">1</button>
+          <button class="round m-2">2</button>
+          <button class="round m-2">3</button>
+          <button class="round m-2">4</button>
+          <button class="round m-2">5</button>
+        </div>
+
+        <button class="submit-btn container-fluid rounded-5 mt-4">
+          S U B M I T
+        </button>
+      </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="box box-2 d-none text-center">
+        <img
+          class="d-block m-auto my-4"
+          src="./images/illustration-thank-you.svg"
+          alt=""
+          srcset=""
+        />
+        <p id="ratingText" class="my-4">
+          You selected <span class="mx-1"></span>
+          <!-- Add rating here -->
+          out of 5
+        </p>
+        <h2>Thank you!</h2>
+
+        <p class="mt-3">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+      <!-- Thank you state end -->
+    </main>
+
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>

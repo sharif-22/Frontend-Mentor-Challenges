@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Overpass", sans-serif;
+}
+:root {
+  /* primary */
+  --orange: hsl(25, 97%, 53%);
+
+  /* neutral */
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(215, 20%, 17%);
+  --DarkBlue: hsl(215, 28%, 12%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--VeryDarkBlue);
+  color: var(--White);
+}
+h1 {
+  font-weight: 400;
+}
+.box {
+  padding: 2rem;
+  width: 425px;
+  height: 425px;
+  border-radius: 25px;
+  background-image: linear-gradient(
+    to bottom left,
+    var(--MediumGrey),
+    var(--DarkBlue)
+  );
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+p {
+  color: var(--LightGrey);
+}
+.round {
+  display: grid;
+  place-items: center;
+  padding: 0%;
+  width: 55px;
+  height: 55px;
+  font-size: large;
+  color: var(--LightGrey);
+  background-color: var(--MediumGrey);
+  border-radius: 50%;
+  box-shadow: 1px 1px 0.8em var(--DarkBlue);
+}
+.rating-btns .round:hover {
+  background-color: var(--orange);
+  color: var(--White);
+}
+button {
+  outline: none;
+  border: none;
+}
+.submit-btn {
+  font-weight: 700;
+  height: 45px;
+  background-color: var(--orange);
+  color: var(--White);
+}
+/* clicked styles  */
+.rating-clicked {
+  background-color: var(--LightGrey);
+  color: var(--White);
+}
+.submit-clicked,
+.submit-btn:hover {
+  background-color: var(--White);
+  color: var(--orange);
+}
+
+#ratingText {
+  margin: 0% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange);
+  background-color: var(--MediumGrey);
+  width: 200px;
+  height: 30px;
+  border-radius: 25px;
+}
+/* mobile styles  */
+@media only screen and (max-width: 450px) {
+  .box {
+    width: 320px;
+    height: max-content;
+  }
+  .round {
+    width: 35px;
+    height: 35px;
+  }
+}
